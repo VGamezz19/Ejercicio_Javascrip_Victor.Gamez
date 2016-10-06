@@ -15,36 +15,20 @@ var estadoCuenta = "";
 do{
 
 	numCuenta=prompt("introduce un numero de cuenta. para finalizar introduce FIN");
-
-	if (numCuenta == "fin"){
-		break;
-	}
-	
 	nomCliente=prompt("introduce el nombre del cliente. para finalizar introduce FIN");
-
-	if (nomCliente == "fin"){
-		break;
-	}
-	
 	saldo=prompt("introduce el sueldo del cliente . para finalizar introduce FIN");
 
-	if (saldo == "fin"){
-		break;
-	}
-
-	
 	if (saldo > 0 ) {
 		estadoCuenta = "Acreedor";
-		
 			}
 		else if (saldo < 0) {
-				estadoCuenta = "Deudor";
-				
+				estadoCuenta = "Deudor";	
 			} else if (saldo = 0) {
 				estadoCuenta = "Nulo";
-			
 			}
 
+
+ //INTRODUCIMOS LOS DATOS RECOLECTADOS EN EN ARRAY
 		banco.push(numCuenta, nomCliente, saldo, estadoCuenta);}
 
 
