@@ -15,22 +15,8 @@ var estadoCuenta = "";
 do{
 
 	numCuenta=prompt("introduce un numero de cuenta. para finalizar introduce FIN");
-
-	if (numCuenta == "fin"){
-		break;
-	}
-	
 	nomCliente=prompt("introduce el nombre del cliente. para finalizar introduce FIN");
-
-	if (nomCliente == "fin"){
-		break;
-	}
-	
 	saldo=prompt("introduce el sueldo del cliente . para finalizar introduce FIN");
-
-	if (saldo == "fin"){
-		break;
-	}
 
 	
 	if (saldo > 0 ) {
@@ -48,7 +34,7 @@ do{
 		banco.push(numCuenta, nomCliente, saldo, estadoCuenta);}
 
 
-	while(banco!= "fin");
+	while(numCuenta!= "fin" || nomCliente != "fin" || saldo != "fin");
 
 	//imprimir
 
