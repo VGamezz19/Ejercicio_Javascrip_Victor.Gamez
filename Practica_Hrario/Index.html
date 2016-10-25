@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      
+      <!-- Meta -->
+      <meta name "tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+
+      <!-- Link -->
+      <link rel="stylesheet" type="text/css" href="css/app.css">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="Icon.ico"/>
+      <link rel="shortcut icon" type="image/png" href="Icon.ico"></li>
+
+      <!-- Script -->
+      <script src="js/app.js"></script>
+
+      <!-- Titulo -->
+	<title>Calendario</title>
+</head>
+      <h1 align="center">Horario escolar</h1>
+<body id="body" onload="offtablas()">
+
+      <form name="Fdesplegable">
+            <select id="desplegable" ONCHANGE="ontablas()">
+                  <option value= "0" >---</option>
+                  <option value= "1" >Mañanas</option>
+                  <option value= "2">Tardes</option>
+                  <option value= "3">Mañanas y tardes</option>
+            </select>
+
+           <!-- <input type="button" id="boton" value="Imprimir" onmousedown="presionar()" onmouseup="levantar()"> -->
+      </form>
+
+      <form name="Ftabla">
+
+            <table id="tabla1">
+
+                  <tr>
+                        <td id = "dias"></td>
+                        <td id = "dias">Lunes</td>
+                        <td id = "dias">Martes</td>
+                        <td id = "dias">Miercoles</td>
+                        <td id = "dias">Jueves</td>
+                        <td id = "dias">Viernes</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario"> 8:00 - 9:00</td>
+                        <td id = "asignatura">Física</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Castellano</td>
+                        <td id = "asignatura">Filosofía</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">9:00 - 10:00</td>
+                        <td id = "asignatura">Biologia</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Geografía</td>
+                        <td id = "asignatura">Inglés</td>
+                        <td id = "asignatura" style="background: #b7415b;">Tutoria</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">10:00 - 10:20</td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">10:20 - 11:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Geografia</td>
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Castellano</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">11:20 - 12:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Inglés</td>
+                        <td id = "asignatura" align="center" rowspan="2" style="background: #4c4c73; padding-left: 5px ">E.F</td>
+                        <td id = "asignatura">Música</td>
+                        <td id = "asignatura">Informatica</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">12:20 - 13:20</td>
+                        <td id = "asignatura">Filosofia</td>
+                        <td id = "asignatura">Karate</td>
+
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Matematicas</td>
+                  </tr>            
+            </table>
+
+            <table id="tabla2">
+
+                  <tr>
+                        <td id = "dias"></td>
+                        <td id = "dias">Lunes</td>
+                        <td id = "dias">Martes</td>
+                        <td id = "dias">Miercoles</td>
+                        <td id = "dias">Jueves</td>
+                        <td id = "dias">Viernes</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario"> 16:00 - 17:00</td>
+                        <td id = "asignatura">Física</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Castellano</td>
+                        <td id = "asignatura" style="background: #b7415b;">Tutoria</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">17:00- 18:00</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Geografia</td>
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Castellano</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">18:00 - 18:20</td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">18:20 - 19:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Inglés</td>
+                        <td id = "asignatura">Música</td> 
+                        <td id = "asignatura" align="center" rowspan="2" style="background: #4c4c73; padding-left: 5px">E.F</td>
+                        <td id = "asignatura">Informatica</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">19:20 - 20:20</td>
+                        <td id = "asignatura">Filosofia</td>
+                        <td id = "asignatura">Informatica</td>               
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Matematicas</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">20:20 - 21:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Geografia</td>
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Castellano</td>
+                  </tr>              
+            </table>
+
+            <table id="tabla3">
+
+                <tr >
+                        <td id = "dias"></td>
+                        <td id = "dias">Lunes</td>
+                        <td id = "dias">Martes</td>
+                        <td id = "dias">Miercoles</td>
+                        <td id = "dias">Jueves</td>
+                        <td id = "dias">Viernes</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario"> 8:00 - 9:00</td>
+                        <td id = "asignatura">Física</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Castellano</td>
+                        <td id = "asignatura">Filosofía</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">9:00 - 10:00</td>
+                        <td id = "asignatura">Biologia</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Geografía</td>
+                        <td id = "asignatura">Inglés</td>
+                        <td id = "asignatura" style="background: #b7415b;">Tutoria</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">10:00 - 10:20</td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">10:20 - 11:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Geografia</td>
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Castellano</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">11:20 - 12:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Inglés</td>
+                        <td id = "asignatura" align="center" rowspan="2" style="background: #4c4c73; padding-left: 5px ">E.F</td>
+                        <td id = "asignatura">Música</td>
+                        <td id = "asignatura">Informatica</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">12:20 - 13:20</td>
+                        <td id = "asignatura">Filosofia</td>
+                        <td id = "asignatura">Filosofia</td>
+
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Matematicas</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario" style="padding-bottom: 20px;padding-top: 20px;">13:20 - 16:00</td>
+                        <td id = "dias" ></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                  </tr>   
+                  <tr>
+                        <td id ="horario"> 16:00 - 17:00</td>
+                        <td id = "asignatura">Física</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Castellano</td>
+                        <td id = "asignatura">Filosofía</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">17:00- 18:00</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Geografia</td>
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Castellano</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">18:00 - 18:20</td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                        <td id = "dias"></td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">18:20 - 19:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Inglés</td>
+                        <td id = "asignatura">Música</td> 
+                        <td id = "asignatura" align="center" rowspan="2" style="background: #4c4c73; padding-left: 5px">E.F</td>
+                        <td id = "asignatura">Informatica</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">19:20 - 20:20</td>
+                        <td id = "asignatura">Filosofia</td>
+                        <td id = "asignatura">Informatica</td>               
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Matematicas</td>
+                  </tr>
+                  <tr>
+                        <td id ="horario">20:20 - 21:20</td>
+                        <td id = "asignatura">Historia</td>
+                        <td id = "asignatura">Matematicas</td>
+                        <td id = "asignatura">Geografia</td>
+                        <td id = "asignatura">Catalan</td>
+                        <td id = "asignatura">Castellano</td>
+                  </tr>       
+            </table>
+      </form>
+      
+
+
+<footer id ="footer">
+      <div class="footerBlock">
+            <script type="text/javascript">
+                  var d = new Date();
+
+                  document.write('Generat per Institut Ribera Baixa el '
+                              +d.getDate(), '/'+d.getMonth(),'/'+d.getFullYear(),
+                              ' a les '+d.getHours(), ':' +d.getMinutes());
+            </script> 
+      </div>       
+</footer>
+
+</body> 
+
+</html>
+
