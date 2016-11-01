@@ -12,7 +12,6 @@ function offtablas() {
 function ontablas() {
 
 	if (desplegable.options[0].selected) {
-		body.style.background= 'rgba(55, 187, 186, 0.39)';
 		tabla1.style.display="none";
 		tabla2.style.display="none";
 		tabla3.style.display='none';
@@ -21,7 +20,6 @@ function ontablas() {
 	} 
 
 	if (desplegable.options[1].selected) {
-		body.style.background= 'rgba(55, 187, 186, 0.39)';
 		tabla1.style.display="inline-table";
 		footer.style.display='inline';
 		tabla2.style.display="none";
@@ -29,18 +27,16 @@ function ontablas() {
 	} 
 
 	if (desplegable.options[2].selected) {
-		body.style.background= 'rgba(55, 187, 186, 0.39)';
 		tabla2.style.display="inline-table";
-		tabla1.style.display="inline-table";
+		footer.style.display='inline';
 		tabla1.style.display="none";
 		tabla3.style.display='none';	     
 		     	
 	}	  
 
 	if (desplegable.options[3].selected) {
-		body.style.background= 'rgba(55, 187, 186, 0.39)';
 		tabla3.style.display='inline-table';
-		tabla1.style.display="inline-table";
+		footer.style.display='inline';
 		tabla1.style.display="none";
 		tabla2.style.display="none";
 		 	

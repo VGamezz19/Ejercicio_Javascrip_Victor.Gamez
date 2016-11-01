@@ -6,6 +6,7 @@ body{
     margin:0;
     font-family: 'Montserrat',sans-serif;
 }
+
 #tabla1{
     border: 3px solid black;
     background-color: rgba(0,47,109,0.80);
@@ -17,6 +18,7 @@ body{
     height: 300px;
 
 }
+
 #tabla2{
     border: 3px solid black;
     background-color: rgba(185, 44, 12, 0.8);
@@ -27,6 +29,7 @@ body{
     width: 60%;
     height: 300px;
 }
+
 #tabla3{
     border: 3px solid black;
     background-color: rgba(8, 39, 36, 0.8);
@@ -52,7 +55,6 @@ body{
 #horario{
     width: 13%;
     padding-left: 20px;
-    font-weight: bold;
     background-color: #9E9E9E;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -74,22 +76,43 @@ body{
     padding-left: 4px;
     width: 12%;
     padding-right: 5px;
-    /* margin-right: 50%; */
     padding-left: 8px;
     font-size: 25px;
     font-weight: bold;
 }
 
+
+#horarioInp{
+    width: 80%;
+    border: 0;
+    padding-left: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #9E9E9E;
+}
+
+.footerBlock{
+    background-color: #002E6D;
+    border-radius: 5px;
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    position:relative;
+}
+
  /*
  #boton {
-	width: 8%;
+    width: 8%;
     height: 44px;
     background-color: rgba(166, 167, 189, 0.75);
     font-size: 1.5em;
     font-family: 'Montserrat',sans-serif;
 
 
-   	cursor: pointer;
+    cursor: pointer;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -97,23 +120,10 @@ body{
 }
 
 #boton:hover {
-	background: #002E6D;
+    background: #002E6D;
     color: #fff;
 
 }
 */
-
-.footerBlock{
-    background-color: #002E6D;
-    border-radius: 5px;
-    width: 100%;
-    paddwin-top: 10px;
-    padding: 18px;
-    /* font-family: montserrat; */
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    position:relative;
-}
 
 
